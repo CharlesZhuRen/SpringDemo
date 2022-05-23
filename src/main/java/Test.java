@@ -32,11 +32,36 @@ public class Test {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 
-        Teacher teacher = (Teacher)ctx.getBean("ttt");
-//        Teacher teacher2 = (Teacher)ctx.getBean("teacher");
-//        CellPhone phone = (CellPhone)ctx.getBean("phone");
-//        phone.call();
-        System.out.println(teacher);//singleton
-
+        CellPhone phone = (CellPhone) ctx.getBean("iphone");
+        phone.call();
+        phone.sendMsg("hello world");
     }
+
+
+//    public void m1(){
+//        logger("m1 starts");
+//        System.out.println("m1");
+//        logger("m1 ends");
+//
+//    }
+
+//    public void m2(){
+//        logger("m2 starts");
+//        System.out.println("m1");
+//        logger("m2 ends");
+//    }
+//
+//    public void m3(){
+//        logger("m3 starts");
+//        System.out.println("m1");
+//        logger("m3 ends");
+//    }
+
+    /*
+    begin transaction
+    insert into .....
+    update delete
+    commit / rollback
+
+     */
 }

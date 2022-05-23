@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+
+
 @Component("ttt")
 @Scope("prototype")
 public class Teacher {  //'teacher'
